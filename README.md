@@ -1,6 +1,7 @@
-Things to consider changing
-- Swap school and degree if your school is degree
-- Most students will benefit from having their degree closer to the top instead of your experience
-- Feel free to add or change the fonts to something you like better
+# Personal Resume - Paolo Urciullo
 
-GitHu: https://github.com/Aarif123456/modern-deedy
+Resume that I can make into different branches to show off the different skills I have in a singular way, making it much easier to customize my resume to suit the job offering.
+
+# Tech
+
+Made with LaTex.  https://www.latex-project.org/help/documentation/
