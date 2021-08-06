@@ -1,0 +1,152 @@
+\documentclass[]{resume-openfont}
+
+\pagestyle{fancy}
+\resetHeaderAndFooter
+%--------------------------------------------------------------
+% Convenience command - make it easy to fill template
+
+% Create job position command. Parameters: company, position, location, when
+\newcommand{\resumeHeading}[4]{\runsubsection{\uppercase{#1}}\descript{ | #2}\hfill\location{#3 | #4}\fakeNewLine}
+
+% Create education heading. Parameters: Name, degree, location, when
+\newcommand{\educationHeading}[4]{\runsubsection{#1}\hspace*{\fill}  \location{#3 | #4}\\
+\descript{#2}\fakeNewLine}
+
+% Parameters: courses
+\newcommand{\courseWork}[1]{\textbf{Coursework:} #1}
+
+% Parameters: courses
+\newcommand{\teacherAssistant}[1]{\textbf{President :} #1}
+ 
+%--------------------------------------------------------------
+\begin{document}
+
+%--------------------------------------------------------------
+%     Profile
+%--------------------------------------------------------------
+\newcommand{\yourName}{Paolo Urciullo}
+\newcommand{\yourWebsite}{https://paolourciullo.com}
+\newcommand{\yourEmail}{paolourciullo@gmail.com}
+%\newcommand{\yourPhone}{860-655-0391}
+\newcommand{\githubUserName}{paolourciullo}
+\newcommand{\linkedInUserName}{Paolourciullo}
+
+% \alignProfileTable
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%     \ralewayBold{\href{\yourWebsite}{\Large \yourName}} & 
+%     Email : \href{mailto:\yourEmail}{\yourEmail}
+%     \\
+%     \href{https://github.com/\githubUserName}{GitHub://\githubUserName} & 
+%     Mobile : \yourPhone
+%     \\
+%     \href{https://www.linkedin.com/in/\linkedInUserName}{LinkedIn://\linkedInUserName} & Website : \href{\yourWebsite}{abdullaharif.tech}
+%     \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape \yourName} \\ \vspace{1pt}
+    \small   \href{mailto:\yourEmail}{\underline{\yourEmail}} $|$ 
+    \href{https://linkedin.com/in/\linkedInUserName}{\underline{linkedIn/\linkedInUserName}} $|$
+    \href{https://github.com/\githubUserName}{\underline{github/\githubUserName}}
+\end{center}
+
+
+
+%--------------------------------------------------------------
+%     Skills
+%--------------------------------------------------------------
+\section{Skills}
+\begin{resumeSkillList}
+    \singleItem{Certifications:}{Agile/SCRUM, Python, SQL, MTA App Dev, CompTIA ITF}
+    \\
+    \singleItem{Web Development:}{JavaScript, React, HTML/CSS, HeadlessCMS}
+    \\
+    \singleItem{Technology:}{Git, MongoDB, Node, Strapi, Figma, \LaTeX}
+\end{resumeSkillList}
+
+
+
+
+
+% \courseWork{Data Structures and Algorithms; Operating Systems;  Computer Security; Software Testing; Advanced Networking; Big Data Analytics}
+\sectionsep
+%--------------------------------------------------------------
+%     Projects
+%--------------------------------------------------------------
+\section{Projects}
+
+\Project{Spaces}{https://spacesevents.vercel.app/}
+\descript{React | NEXT | TailwindCSS | Strapi | Postgres }\\
+A full stack application with login and registration functionality as well as data persistence.  The goal is to provide twitter users with a place to tabulate upcoming spaces and reference them.\\
+\sectionsep
+  
+\Project{Movie App}{https://paolourciullo.github.io/movieApp/}
+\descript{HTML | CSS | JavaScript | API }\hfill \\
+An app that uses themoviedb.org to display current box office selections in a structured, responsive design. \\
+\sectionsep
+
+\Project{Blog-Overflow}{https://blog-overflow.vercel.app}
+\descript{React | NEXT | TailwindCSS | Markdown}\\
+A Static Blog page that renders markdown files into beautiful blog posts.  Posts are searchable by name and category.  
+\sectionsep
+
+%\Project{Paolo's project 4}{https://github.com/Aarif123456/Distributed-DB}
+%\descript{Java, Distributed System, Computer Networks, Concurrency}\\
+%A distributed key-value store which automatically replicates data in the background while the user manages their data. Implemented a custom P2P protocol to maximize fault tolerance and scalability.\\
+%\sectionsep
+  
+%--------------------------------------------------------------
+%     Education
+%--------------------------------------------------------------
+\section{Education}
+% Swap degree and school if your school is reputable
+\educationHeading{DCI}{Software Development}{Hartford, CT}{October 2020}
+
+\educationHeading{New England College}{Theatre With Performance Specialization}{Henniker, NH}{May 2005}
+
+\teacherAssistant{Carriage House Theatre Ensemble}
+
+\educationHeading{Avon Old Farms School}{Co-Creator of the Jazz Club}{Avon, CT}{May 2000} 
+
+
+
+
+%--------------------------------------------------------------
+%     Experience
+%--------------------------------------------------------------
+\section{Work Experience}
+\resumeHeading{DITMCO Int'l}{Engineering Technician}{Kansas City, MO}{June 2018 – July 2020}
+\begin{tightemize}
+    
+    %  \item Here is another bullet that I might choose to uncomment for some jobs
+    \item 	Full scale design and implementation of table-top fixtures used to hold asset in place while electrical integrity tests are performed.
+    \item 	Cost Estimation of outgoing quotes to both potential and current customers.  Handling customer’s needs based on asset interface specifications, availability of materials needed, and customer’s requested completion date.  Sourcing hard to find NSN connectors and pins, mostly MIL-DTL-38999.
+    \item Designed reverse-engineered PCB connectors where OEM PCB was unattainable.  Fully familiar with ITAR restrictions and DOD clearances.
+    \item 	Programming of test script used in the electrical integrity testing of assets.  Including debugging and installations of turn-key electrical analyzer at customer’s site.
+\end{tightemize}
+\sectionsep
+
+\resumeHeading{Triumph Manufacturing}{Lead Assembler}{East Hartford, CT}{May 2014 - April 2018}
+\begin{tightemize}
+    \item 	Built and tested electrical enclosures without supervision, all ranging in size and intricacy.  Customers included medical equipment manufacturers, injection molding manufacturers and DOD contractors. 
+    \item 	PCB test fixture design and operation as well as diagnosis and repair.  Removing defective IC’s and hand-soldering replacements.  Quality assurance tests performed of finished and reworked boards.
+\end{tightemize}
+\sectionsep
+
+\resumeHeading{Direct Color Systems Inc}{Electromechanical Assembler}{Rocky Hill, CT}{March 2012 – May 2014}
+\begin{tightemize}
+    \item 	Created job instructions for small sub-assemblies.
+    \item 	Incoming employee training.  Providing management with full score card of incoming employee’s progress and future training goals.
+\end{tightemize}
+\sectionsep
+
+
+ % A more concise alternate 
+% \begin{resumeSkillList}
+%     \doubleItem{Languages:}{Java, C++, Python, C\#, PHP, Prolog, Bash, C, Racket}%
+%     {Databases:}{SQL, MongoDB, Neo4j, DynamoDB}
+%     \\
+%     \doubleItem{Web Development:}{JavaScript, TypeScript, React, HTML/CSS}
+%     {Technology:}{Git, AWS, GCP, Azure, Docker, \LaTeX}%
+% \end{resumeSkillList}
+\end{document}
